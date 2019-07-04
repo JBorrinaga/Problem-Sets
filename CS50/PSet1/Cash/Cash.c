@@ -17,17 +17,18 @@
 int main(void) {
 
 	float change;
-
+	int roundedChange, quarters, dimes, nickels, pennies;
+	
 	do {
 		printf("Enter amount of change due: $");
 		scanf_s("%f", &change);
 	} while (change <= 0);
 
-	int roundedChange = change * 100;
-	int quarters = roundedChange / 25;
-	int dimes = (roundedChange % 25) / 10;
-	int nickels = (roundedChange % 25 % 10) / 5;
-	int pennies = (roundedChange % 25 % 10 % 5);
+	roundedChange = change * 100;
+	quarters = roundedChange / 25;
+	dimes = (roundedChange % 25) / 10;
+	nickels = (roundedChange % 25 % 10) / 5;
+	pennies = (roundedChange % 25 % 10 % 5);
 
 	printf("Quarters: %i\n", quarters);
 	printf("Dimes: %i\n", dimes);
