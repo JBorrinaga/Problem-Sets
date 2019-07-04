@@ -14,7 +14,7 @@
 
 int main(void) {
 	int height;
-
+	int leftSpace, leftBlock, rightBlock;
 	// Prompt user
 	do {
 		printf("Height: ");
@@ -26,14 +26,14 @@ int main(void) {
 	{
 		// Left Side
 		// Add spaces 
-		for (int leftSpace = 0; leftSpace  < height - i - 1; leftSpace++)
+		for ( leftSpace = 0; leftSpace  < height - i - 1; leftSpace++)
 		{
 			printf(" ");
 		}
 
 		// Add blocks
 		printf(" ");
-		for (int leftBlock = 0; leftBlock <= i ; leftBlock++)
+		for ( leftBlock = 0; leftBlock <= i ; leftBlock++)
 		{
 			printf("#");
 		}
@@ -43,7 +43,7 @@ int main(void) {
 
 		// Right Side
 		// Add Blocks
-		for (int rightBlock= 0; rightBlock <= i; rightBlock++)
+		for ( rightBlock= 0; rightBlock <= i; rightBlock++)
 		{
 			printf("#");
 		}
