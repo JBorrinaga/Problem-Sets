@@ -34,7 +34,6 @@ int main(void) {
 	printf("Nickels: %i\n", nickels);
 	printf("Pennies: %i\n", pennies);
 	printf("______________________\n");
+	
 	printf("Total Coins: %i", quarters + dimes + nickels + pennies);
-	_getch();
-
 }
