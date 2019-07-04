@@ -11,7 +11,7 @@
 //****************************************************************
 
 #include <stdio.h>
-#include <conio.h>
+
 int main(void) {
 	int height;
 
@@ -48,9 +48,7 @@ int main(void) {
 			printf("#");
 		}
 	
-	   
 		printf("\n");
 	}
 
-	_getch();
 }
