@@ -14,7 +14,8 @@
 
 int main(void) {
 	int height; 
-
+	int i, j, k;
+	
 	// Prompt user
 	do {
 		printf("Height: ");
@@ -22,16 +23,16 @@ int main(void) {
 	} while (height <= 0 || height >= 23);
 
 
-	for (int i = 0; i < height; i++)
+	for ( i = 0; i < height; i++)
 	{
 		// Add spaces
-		for (int j = 0; j < height - i - 1; j++)
+		for ( j = 0; j < height - i - 1; j++)
 		{
 			printf(" ");
 		}
 
 		// Add blocks
-		for (int k = 0; k < i + 2; k++)
+		for ( k = 0; k < i + 2; k++)
 		{
 			printf("#");
 		}
